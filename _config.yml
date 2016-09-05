@@ -1,0 +1,21 @@
+#
+# https://www.sylvaindurand.org/making-jekyll-multilingual/
+#
+title: 
+ de: ChainSquad.de
+ en: ChainSquad.com
+email: info@chainsquad.com
+description: 
+ de: >
+  Wir sind ein unabhängiges Team das Ihnen bei der Entwicklung,
+  der Fortbildung und Beratung für blockketten-basierte Anwendungen
+  bietet.
+
+ en: >
+  We are an independent team of entrepreneurs that offers developments,
+  trainings, and consultancy in blockchain based applications.
+
+baseurl: ""
+url: "http://chainsquad.com"
+github_username:  chainsquad
+markdown: kramdown
