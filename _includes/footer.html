@@ -1,6 +1,28 @@
 <footer>
- &copy; {{ site.name }}
- {% if site.github %} 
- - <a href="https://github.com/{{ site.github }}">{{ site.github }}</a>
- {% endif %}
+
+ <div class="row">
+  <div class="col-md-6">
+   &copy; {{ site.name }}
+   {% if site.github %} 
+   - <a href="https://github.com/{{ site.github }}">{{ site.github }}</a>
+   {% endif %}
+  </div>
+
+  <div class="col-md-6 text-right">
+   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+   {% for post in posts %}
+   <a href="{{ post.permalink | prepend: site.baseurl }}" class="{{ post.lang }}">
+    <img src="/img/{{page.lang}}.svg" width="24px" class="flag" />
+   </a>
+   {% endfor %}
+
+   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+   {% for page in pages %} 
+   <a href="{{ page.permalink | prepend: site.baseurl }}" class="{{ page.lang }}">
+    <img src="/img/{{page.lang}}.svg" width="24px" class="flag" />
+   </a>
+   {% endfor %}
+  </div>
+ </div>
+
 </footer>

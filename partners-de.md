@@ -1,12 +1,12 @@
 ---
 layout: default
 ref: partners
-lang: en
-permalink: /partners
+lang: de
+permalink: /de/partners
 priority: 20
 ---
 
-# Partners
+# Partner
 
 * Cryptonomex Inc.
 * Steemit Inc.

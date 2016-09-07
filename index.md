@@ -2,13 +2,13 @@
 layout: default
 ref: home
 lang: en
-permlink: /
+permalink: /
 priority: 0
 ---
 
 # About
 
-ChainSquad GmbH is an independent blockchain development company founded
+ChainSquad is an independent blockchain development company founded
 privately by successful entrepreneurs around the world. Our mission is
 to facilitate the growth and adoption of industrial blockchain
 technology not just in the financial sector.

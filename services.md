@@ -2,7 +2,7 @@
 layout: default
 ref: services
 lang: en
-permlink: /services
+permalink: /services
 priority: 1
 ---
 

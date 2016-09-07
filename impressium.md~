@@ -2,7 +2,7 @@
 layout: default
 ref: imprint
 lang: en
-permlink: /imprint
+permalink: /imprint
 priority: 1000
 ---
 
