@@ -27,6 +27,7 @@ h1 {
  font-weight: normal;
  color: #696969;
  margin-bottom: 10px;
+ border-bottom: 1px solid #E6E6E6;
 }
 
 h2 {
@@ -136,6 +137,10 @@ div.right .post ul {
  */
 div.col-sm-8 {
  margin-top: 80px;
+}
+
+.content-wrapper{
+ text-align:justify;
 }
 
 /**

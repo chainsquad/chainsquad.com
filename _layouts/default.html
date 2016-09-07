@@ -6,8 +6,7 @@
 
    <div class="col-sm-3">
     <img id="about" src="{{ site.baseurl }}/img/logo.svg"
-         height="75px"
-         width="75px" /><br />	
+         height="96px" /><br />	
 
     <strong>navigation</strong><br />
     {% assign pages=site.pages | where:"lang", page.lang | sort: 'priority' %}
@@ -25,7 +24,9 @@
 
    <div class="col-sm-8 col-offset-1">
 
-    {{ content }}
+    <div class="content-wrapper">
+     {{ content }}
+    </div>
 
     {% include footer.html %}
 

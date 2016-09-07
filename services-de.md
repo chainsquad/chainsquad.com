@@ -6,20 +6,20 @@ permalink: /de/services
 priority: 1
 ---
 
-## Beratung
+# Beratung
 
 Unser Team aus langjährigen Experten auf verschiedenen großen
 Blockketten-Technologien erlaubt uns die beste Lösung für Ihre
 Bedürfnisse zu entwickeln.
 
-## Entwicklung
+# Entwicklung
 
 Blockketten dienen als Plattform für die Integration zahlloser
 Anwendungen. Wir helfen Ihnen Ihre Anwendung für die Blockkette zu
 entwickeln und in existierende Prozesse einzubinden um größtmöglichen
 Nutzen aus der Technologie schlagen zu können.
 
-## Fortbildung
+# Fortbildung
 
 Selbstverständlich beraten und trainieren wir Sie und Ihre Entwickler
 gerne in allen Fragen rund um die Blockkette.
