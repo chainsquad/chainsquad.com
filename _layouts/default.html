@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+ {% include head.html %}
+ <body>
+  <div class="container">
 
-  {% include head.html %}
+   <div class="col-sm-3">
+    <img id="about" src="{{ site.baseurl }}/img/logo.svg"
+         height="75px"
+         width="75px" /><br />	
 
-  <body>
+    <strong>navigation</strong><br />
+    {% assign pages=site.pages | where:"lang", page.lang | sort: 'priority' %}
+    {% for i in pages %}
+     <a class="about" href="{{ i.url | prepend: site.baseurl }}">{{ i.ref }}</a><br />
+    {% endfor %}
 
-    {% include header.html %}
+    {% if site.about %}
+    <div id="about">
+     <strong>about</strong><br />
+     {{ site.about[page.lang] }}
+    </div>
+    {% endif %}
+   </div>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+   <div class="col-sm-8 col-offset-1">
+
+    {{ content }}
 
     {% include footer.html %}
 
-  </body>
+   </div>
 
+  </div>
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+ </body>
 </html>

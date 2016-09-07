@@ -13,4 +13,10 @@
   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>

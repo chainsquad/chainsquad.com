@@ -5,17 +5,20 @@ title:
  de: ChainSquad.de
  en: ChainSquad.com
 email: info@chainsquad.com
-description: 
+# name: ChainSquad GmbH (in Gründung)
+name: ChainSquad
+
+about: 
  de: >
   Wir sind ein unabhängiges Team das Ihnen bei der Entwicklung,
   der Fortbildung und Beratung für blockketten-basierte Anwendungen
   bietet.
 
  en: >
-  We are an independent team of entrepreneurs that offers developments,
-  trainings, and consultancy in blockchain based applications.
+  The blockchain technology is disrupting everything and it won't stop
+  at financial technologies.
 
 baseurl: ""
 url: "http://chainsquad.com"
-github_username:  chainsquad
+github:  chainsquad
 markdown: kramdown

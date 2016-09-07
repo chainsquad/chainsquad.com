@@ -1,6 +1,6 @@
 ---
 layout: default
-ref: index
+ref: home
 lang: de
 permlink: /de
 ---
