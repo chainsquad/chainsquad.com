@@ -145,6 +145,19 @@ div.col-sm-8 {
 
 /**
  * ///////////////////////////////////
+ * Contact
+ * ///////////////////////////////////
+ */
+
+address {
+ margin-left: 15px;
+ background: url("/img/logo.svg") no-repeat right;
+ padding: 15px;
+ border: 1px solid #aaa;
+}
+
+/**
+ * ///////////////////////////////////
  * Left column aka nav bar formatting
  * ///////////////////////////////////
  */
