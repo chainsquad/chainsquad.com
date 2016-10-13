@@ -2,19 +2,17 @@
 # https://www.sylvaindurand.org/making-jekyll-multilingual/
 #
 title: 
- de: ChainSquad.de
- en: ChainSquad.com
+ de: ChainSquad.de GmbH (i.Gr.)
+ en: ChainSquad.com GmbH (i.Gr.)
 email: info@chainsquad.com
-# name: ChainSquad GmbH (in Gründung)
-name: ChainSquad
+name: ChainSquad GmbH (in Gründung)
 
 vision: 
  de: >
   Die Blockketten-Technologie ändert alles, nicht nur FinTech.
 
  en: >
-  The blockchain technology is disrupting everything and it won't stop
-  at financial technologies.
+  The blockchain technology is disrupting everything not just fintech.
 
 baseurl: ""
 url: "http://chainsquad.com"

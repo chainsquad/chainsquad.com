@@ -8,10 +8,9 @@ priority: 0
 
 # Über uns
 
-ChainSquad ist ein unabhängiges Unternehmen für Blockketten-Technologien
-und wurde privat von erfolgreichen Unternehmern aus der ganzen Welt
-gegründet. Unser Mission ist das Wachstum und die Verbreitung von
-Blockketten-Technologien, nicht nur im Finanzbereich, zu erleichtern.
+{{site.name}} ist spezialisiert auf Blockketten-Technologien und treibt
+das Wachstum und die Verbreitung von Blockketten-Technologien voran,
+nicht nur im Finanzbereich, sondern in allen Wirtschaftsbereichen.
 
 # Vision
 
