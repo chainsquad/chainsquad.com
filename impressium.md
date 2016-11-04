@@ -10,14 +10,25 @@ priority: 1000
 
 According to § 5 TMG
 
-**Betreiber und Kontakt:**
+### Operator and Contact
 
-{{site.name}}<br/>
+#### {{site.name}}
 Hauptstraße 3<br/>
 90587 Veitsbronn
 
-**Authorized to represent CEO:** Dr.-Ing. Fabian Schuh
+#### Authorized to represent 
+The CEO Dr.-Ing. Fabian Schuh
 
-**Register court:** not available yet
+### Legal Record
+Registered at the Record<br/>
+Registered court: Fürth (Bayern/Germany)<br/>
+Registration Number: HRB 15856<br/>
+Date of Registration: 21. Oct. 2016<br/>
+<br/>
+VAT-identification number (§27 UstG): *pending*<br/>
 
-**Value-added tax (VAT)** - identification number according § 27a of the German Turnover-Tax Law: not available yet
+#### Responsible for the content of this Page (§55 RStV)
+{{site.name}}<br/>
+Hauptstraße 3<br/>
+90587 Veitsbronn<br/>
+represented by the CEO Dr.-Ing. Fabian Schuh

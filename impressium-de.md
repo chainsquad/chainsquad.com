@@ -10,14 +10,25 @@ priority: 1000
 
 Angaben gem. § 5 TMG
 
-**Betreiber und Kontakt:**
+### Betreiber und Kontakt
 
-{{site.name}}<br/>
+#### {{site.name}}
 Hauptstraße 3<br/>
 90587 Veitsbronn
 
-**Vertretungsberechtigter Geschäftsführer:** Dr.-Ing. Fabian Schuh
+#### Vertreten durch
+den Geschäftsführer: Dr.-Ing. Fabian Schuh
 
-**Eingetragen im Handelsregister beim Amtsgericht**: *ausstehend*
+### Registereintrag
+Eintragung im Handelsregister<br/>
+Registergericht: Fürth (Bayern)<br/>
+Registernummer: HRB 15856<br/>
+Tag der Eintragung: 21.10.2016<br/>
+<br/>
+Umsatzsteuer-Identifikationsnummer (§27 UstG): *ausstehend*<br/>
 
-**Umsatzsteueridentifikationsnummer:** *ausstehend*
+#### Verantwortlich für den Inhalt nach (§55 RStV)
+{{site.name}}<br/>
+Hauptstraße 3<br/>
+90587 Veitsbronn<br/>
+Vertreten durch den Geschäftsführer: Dr.-Ing. Fabian Schuh
