@@ -1,14 +1,14 @@
 <footer>
 
  <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-7">
    &copy; {{ site.name }}
    {% if site.github %} 
    - <a href="https://github.com/{{ site.github }}">{{ site.github }}</a>
    {% endif %}
   </div>
 
-  <div class="col-md-6 text-right">
+  <div class="col-md-5 text-right">
    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
    {% for post in posts %}
    <a href="{{ post.permalink | prepend: site.baseurl }}" class="{{ post.lang }}">

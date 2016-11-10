@@ -2,8 +2,8 @@
 # https://www.sylvaindurand.org/making-jekyll-multilingual/
 #
 title: 
- de: ChainSquad.de GmbH (i.Gr.)
- en: ChainSquad.com GmbH (i.Gr.)
+ de: ChainSquad.de GmbH (i.Gr.) #
+ en: ChainSquad.com GmbH (i.Gr.) #
 email: info@chainsquad.com
 name: ChainSquad GmbH (in Gründung)
 vision: 
@@ -13,5 +13,9 @@ vision:
   The blockchain technology is disrupting everything not just fintech.
 baseurl: ""
 url: "http://chainsquad.com"
-github:  chainsquad
+github: chainsquad
 markdown: kramdown
+
+collections:
+ - clients
+ - chains

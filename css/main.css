@@ -183,3 +183,18 @@ div.col-sm-3 img#about {
  margin-left: auto;
  margin-right: auto;
 }
+
+/**
+ * ///////////////////////////////////
+ * Thumbnails
+ * ///////////////////////////////////
+ */
+.thumbnail img {
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+.thumbnail {
+ padding-bottom:0em;
+ min-height: 140px;
+ max-height: 140px;
+}
