@@ -25,7 +25,7 @@ Registered court: Fürth (Bayern/Germany)<br/>
 Registration Number: HRB 15856<br/>
 Date of Registration: 21. Oct. 2016<br/>
 <br/>
-VAT-identification number (§27 UstG): *pending*<br/>
+VAT-identification number (§27 UstG): DE308896775<br/>
 
 #### Responsible for the content of this Page (§55 RStV)
 {{site.name}}<br/>

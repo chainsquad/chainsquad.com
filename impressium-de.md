@@ -25,7 +25,7 @@ Registergericht: Fürth (Bayern)<br/>
 Registernummer: HRB 15856<br/>
 Tag der Eintragung: 21.10.2016<br/>
 <br/>
-Umsatzsteuer-Identifikationsnummer (§27 UstG): *ausstehend*<br/>
+Umsatzsteuer-Identifikationsnummer (§27 UstG): DE308896775<br/>
 
 #### Verantwortlich für den Inhalt nach (§55 RStV)
 {{site.name}}<br/>
