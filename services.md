@@ -23,3 +23,9 @@ the benefits of blockchain technology.
 
 New to blockchain technologies? Let us help you get up to speed with our
 educational seminars.
+
+# Software
+
+Our rock-solid solutions are trusted by many existing names in the
+blockchain space, and for good reason. We use Python to build
+enterprise-grade software that is scalable, secure and reliable.

@@ -23,3 +23,10 @@ Nutzen aus der Technologie schlagen zu können.
 
 Selbstverständlich beraten und trainieren wir Sie und Ihre Entwickler
 gerne in allen Fragen rund um die Blockkette.
+
+# Software
+
+Unsere Software-Lösungen werden von vielen bestehenden Unternehmen aus
+der Blockchain Gemeinschaft aus gutem Grund eingesetzt. Wir verwenden
+Python um Enterprise-Grade-Software Lösungen zu entwickeln, die
+skalierbar, sicher und zuverlässig ist.
