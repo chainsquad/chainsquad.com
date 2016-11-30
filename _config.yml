@@ -19,3 +19,6 @@ markdown: kramdown
 collections:
  - clients
  - chains
+
+gems:
+  - jekyll-sitemap
