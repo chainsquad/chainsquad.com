@@ -2,10 +2,10 @@
 # https://www.sylvaindurand.org/making-jekyll-multilingual/
 #
 title: 
- de: ChainSquad.de GmbH (i.Gr.) #
- en: ChainSquad.com GmbH (i.Gr.) #
+ de: ChainSquad.de GmbH
+ en: ChainSquad.com GmbH
 email: info@chainsquad.com
-name: ChainSquad GmbH (in Gründung)
+name: ChainSquad GmbH
 vision: 
  de: >
   Die Blockketten-Technologie ändert alles, nicht nur FinTech.
