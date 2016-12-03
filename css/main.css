@@ -189,9 +189,10 @@ div.col-sm-3 img#about {
  * Thumbnails
  * ///////////////////////////////////
  */
-.thumbnail img {
+.thumbnail a img {
  margin-top: 5px;
  margin-bottom: 5px;
+ height: 64px;
 }
 .thumbnail {
  padding-bottom:0em;

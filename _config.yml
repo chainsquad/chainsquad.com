@@ -17,8 +17,10 @@ github: chainsquad
 markdown: kramdown
 
 collections:
- - clients
- - chains
+ clients:
+       output: false
+ chains:
+       output: false
 
 gems:
   - jekyll-sitemap
