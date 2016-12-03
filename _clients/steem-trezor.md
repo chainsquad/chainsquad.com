@@ -1,5 +1,5 @@
 ---
 name: Steem-Trezor
-img: /img/trezor.jpg
+img: /img/trezor.png
 URL: https://github.com/chainsquad/trezor-mcu
 ---
