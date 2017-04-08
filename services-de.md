@@ -28,5 +28,5 @@ gerne in allen Fragen rund um die Blockkette.
 
 Unsere Software-Lösungen werden von vielen bestehenden Unternehmen aus
 der Blockchain Gemeinschaft aus gutem Grund eingesetzt. Wir verwenden
-Python um Enterprise-Grade-Software Lösungen zu entwickeln, die
-skalierbar, sicher und zuverlässig ist.
+moderne Technologien und robuste Architekturen um Enterprise-Grade-Software
+Lösungen zu entwickeln, die skalierbar, sicher und zuverlässig ist.

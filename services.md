@@ -27,5 +27,6 @@ educational seminars.
 # Software
 
 Our rock-solid solutions are trusted by many existing names in the
-blockchain space, and for good reason. We use Python to build
-enterprise-grade software that is scalable, secure and reliable.
+blockchain space, and for good reason. We use modern technologies and robust
+software architectures to build enterprise-grade software that is scalable,
+secure and reliable.
