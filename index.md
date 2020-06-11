@@ -6,7 +6,7 @@ permalink: /
 priority: 0
 ---
 
-# About
+# Innovation Delivered.
 
 {{site.name}} is a German blockchain development company with the
 mission to facilitate the growth and adoption of technologies in all
@@ -22,4 +22,5 @@ Blockchain technologies have the ability to decentralize power from
 existing authorities in business, law, and technology to those that care
 about their platform. This shift will disrupt current business, economic
 and social paradigms. Those that care shall be those that benefit the
-most.
+most. The advantages of the blockchain's inherent autonomy and transparency
+provide food for new adventures and we are at the forefront of it.

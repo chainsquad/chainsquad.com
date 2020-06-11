@@ -23,4 +23,6 @@ Blockketten-Technologien ermöglichen das Machtverhältnis von zentralen
 Einrichtungen und Autoritäten in Unternehmen, Gesetzen und Technologien
 hin zu denjenigen zu verlagern, die sich um eine Plattform und
 Gemeinschaft bemühen. Dieser Wandel wird derzeitige unternehmerische,
-ökonomisch sowie soziale Paradigmen weiterentwickeln.
+ökonomisch sowie soziale Paradigmen weiterentwickeln. Die Vorteile inhärenter
+Autonomie und Transparenz bieten Material für neue Abenteuer und wir sind Vorne
+mit dabei.

@@ -1,6 +1,7 @@
 <div class="row">
 
-{% for client in site.clients %}
+{% assign sorted = (site.clients | sort: 'order') %}
+{% for client in sorted %}
  <div class="col-sm-4 col-md-4">
    <div class="thumbnail">
     <a href="{{client.URL}}" target="_blank">

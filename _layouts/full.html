@@ -5,9 +5,14 @@
   <div class="container">
 
    <div class="col-sm-3">
-    <a href="/">
-     <img id="about" src="{{ site.baseurl }}/img/logo.svg" height="96px" />
-    </a><br />	
+    <img id="about" src="{{ site.baseurl }}/img/logo.svg"
+         height="96px" /><br />	
+
+    <strong>navigation</strong><br />
+    {% assign pages=site.pages | where:"lang", page.lang | sort: 'priority' %}
+    {% for i in pages %}
+     <a class="about" href="{{ i.url | prepend: site.baseurl }}">{{ i.ref }}</a><br />
+    {% endfor %}
 
     {% if site.vision %}
     <div id="about">
@@ -15,15 +20,6 @@
      {{ site.vision[page.lang] }}
     </div>
     {% endif %}
-    
-    {% if site.github %} 
-    <div id="about">
-     <a href="https://github.com/{{ site.github }}">
-     <img src="/img/github.svg" style="width: 12px; float:left" />
-     /{{ site.github }}</a>
-    </div>
-    {% endif %}
-
    </div>
 
    <div class="col-sm-8 col-offset-1">

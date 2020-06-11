@@ -1,14 +1,11 @@
 <footer>
 
  <div class="row">
-  <div class="col-md-7">
-   &copy; {{ site.name }}
-   {% if site.github %} 
-   - <a href="https://github.com/{{ site.github }}">{{ site.github }}</a>
-   {% endif %}
+  <div class="col-md-8">
+    &copy; {{ 'now' | date: "%Y" }} {{ site.name }}
   </div>
 
-  <div class="col-md-5 text-right">
+  <div class="col-md-4 text-right">
    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
    {% for post in posts %}
    <a href="{{ post.permalink | prepend: site.baseurl }}" class="{{ post.lang }}">
@@ -22,6 +19,13 @@
     <img src="/img/{{page.lang}}.svg" width="24px" class="flag" />
    </a>
    {% endfor %}
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-md-6">
+    - <a href="{%link imprint.md %}">/imprint</a>
+    - <a href="{%link contact.html %}">/contact</a>
+   </div>
   </div>
  </div>
 
