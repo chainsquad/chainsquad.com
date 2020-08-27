@@ -7,23 +7,19 @@ body {
  color: #424242;
 }
 
-@media (min-width: 768px) {
- .container {
-  max-width: 730px;
- }
-}
 /**
  * //////////////////////////
  * Font and link declarations
  * //////////////////////////
  */
-span.time {
+.time {
  color: #ADADAD;
  margin-bottom: 5px;
  font-size: 11px;
 }
 
 h1 {
+ font-size: 18pt;
  font-weight: normal;
  color: #696969;
  margin-bottom: 10px;
@@ -31,6 +27,7 @@ h1 {
 }
 
 h2 {
+ font-size: 14pt;
  font-weight: normal;
  margin-bottom: 5px;
  color: #666666;
@@ -38,9 +35,14 @@ h2 {
 }
 
 h3 {
- font-weight: normal;
+ font-size: 12pt;
  margin-bottom: 5px;
- color: #666666;
+ color: #606060;
+}
+
+h4 {
+ font-size: 14pt;
+ color: #505050;
  text-decoration: underline;
 }
 
@@ -54,14 +56,36 @@ a:hover {
  text-decoration: underline;
 }
 
+span.excerpt {
+ color: #555555;
+ margin-bottom: 5px;
+ font-size: 13px;
+}
+
+.overview-link {
+ border-left: 5px solid #aaa;
+ padding: 5px 5px 0px 5px;
+ margin-bottom: 3px;
+}
+
+.overview-link a {
+ font-weight: 700;
+}
+
+
 /**
  * /////////////////
  * Container element
  * /////////////////
  */
 div#container {
- width: 700px;
+ width: 730px;
  margin: auto;
+}
+@media (min-width: 768px) {
+ .container {
+  max-width: 730px;
+ }
 }
 
 /**
@@ -178,6 +202,10 @@ div.col-sm-3 div#about {
  color: #8C8C8C;
 }
 
+div.col-sm-3 div#about h5 {
+ color: #444;
+}
+
 div.col-sm-3 img#about {
  margin-bottom: 10px;
  margin-left: auto;
@@ -198,4 +226,17 @@ div.col-sm-3 img#about {
  padding-bottom:0em;
  min-height: 140px;
  max-height: 140px;
+}
+
+/**
+ * ///////////////////////////////////
+ * Blog images
+ * ///////////////////////////////////
+ */
+.content .post img[src*="large"] {
+ max-width: 100%;
+}
+
+.content .post img[src*="bordered"] {
+ border: 1px solid #4a4a4a;
 }

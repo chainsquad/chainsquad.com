@@ -11,18 +11,20 @@
 
     {% if site.vision %}
     <div id="about">
-     <strong>vision</strong><br />
+     <h5># vision</h5>
      {{ site.vision[page.lang] }}
     </div>
     {% endif %}
     
-    {% if site.github %} 
     <div id="about">
+     <h5># links</h5>
      <a href="https://github.com/{{ site.github }}">
      <img src="/img/github.svg" style="width: 12px; float:left" />
      /{{ site.github }}</a>
+     <br/>
+     <a href="https://articles.chainsquad.com">
+     🖇/articles</a>
     </div>
-    {% endif %}
 
    </div>
 

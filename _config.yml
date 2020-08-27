@@ -22,5 +22,9 @@ collections:
  chains:
        output: false
 
-gems:
+plugins:
   - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  posts_limit: 20
