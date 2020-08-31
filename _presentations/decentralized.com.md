@@ -2,6 +2,7 @@
 title: From smart contracts to decentralized companies
 date: 2019-10-31
 location: Decentralized, Athens
+lang: en
 ---
 
 How to built autonomous companies base on the building blocks of modern

@@ -2,6 +2,7 @@
 title: Escrow Worker Management
 date: 2018-09-22
 location: bitfest, Amsterdam
+lang: en
 ---
 
 How a secure and public accounting system for BitShares' worker proposal system

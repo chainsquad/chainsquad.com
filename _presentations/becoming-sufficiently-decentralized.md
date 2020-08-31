@@ -2,6 +2,7 @@
 title: Becoming sufficiently decentralized - What it takes
 date: 2019-11-01
 location: Decentralized, Athens
+lang: en
 ---
 
 What "decentralized" actually means and what it take for a blockchain system to

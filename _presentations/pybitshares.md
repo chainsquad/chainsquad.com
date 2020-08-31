@@ -2,6 +2,7 @@
 title: pyBitShares - Python & BitShares – a dream couple
 date: 2018-05-06
 location: bitfest, Amsterdam
+lang: en
 ---
 
 As the core developer of python-bitshares, we present here some history,

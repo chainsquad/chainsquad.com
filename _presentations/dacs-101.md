@@ -2,6 +2,7 @@
 title: DACs 101
 date: 2018-05-01
 location: Nuremberg, Germany
+lang: en
 ---
 
 Decentralized Autonomous Systems - The Age of Blockchain Technologies and why

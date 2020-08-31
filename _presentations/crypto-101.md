@@ -2,6 +2,7 @@
 title: Crypto 101
 date: 2018-01-16
 location: University W&uuml;rzburg, W&uuml;rzburg
+lang: en
 ---
 
 An introduction to the cryptography used by Blockchain Technologies. ECDSA,

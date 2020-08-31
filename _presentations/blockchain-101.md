@@ -2,6 +2,7 @@
 title: Blockchain 101
 date: 2018-11-30
 location: IGZ, Erlangen, Tennenlohe
+lang: en
 ---
 
 An introduction to the world of Blockchains, its components and why it may

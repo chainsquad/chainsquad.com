@@ -2,6 +2,7 @@
 title: BitShares 101
 date: 2018-11-01
 location: Nuremberg
+lang: en
 ---
 
 An introduction to autonomous companies and the BitShares blockchain, it's

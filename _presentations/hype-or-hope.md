@@ -2,6 +2,7 @@
 title: Hype or Hope
 date: 2019-07-27
 location: Tennenlohe, Germany
+lang: en
 ---
 
 Blockchain Technologie. Hype or Hope? Where does it make sense? Why it's often
