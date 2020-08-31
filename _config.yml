@@ -28,6 +28,7 @@ collections:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 
 feed:
   posts_limit: 20
@@ -52,3 +53,24 @@ nav:
     icon: 🖇
     ref: Articles
     lang: en
+
+  
+  - url: /de/contact
+    icon: "📯"
+    ref: "Kontakt"
+    lang: de
+
+  - url: /de/leistungen
+    icon: "🏗"
+    ref: Leistungen 
+    lang: de
+
+  - url: /de/praesentationen
+    icon: "📊"
+    ref: Präsentationen 🇬🇧
+    lang: de
+
+  - url: https://articles.chainsquad.com
+    icon: 🖇
+    ref: Artikel 🇬🇧
+    lang: de

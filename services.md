@@ -17,8 +17,6 @@ thorough analysis of your company's profile whilst drafting along your ideas of
 development. We will assess the potential of blockchain technology in your
 company and discuss possibilities of optimization.
 
-Find out by [contacting us](/contact).
-
 # 👨‍🔧 Blockchain Full-Stack development
 
 Need assistance getting to a quality product based on a blockchain? Looking for
@@ -29,15 +27,11 @@ and custom-built protocols. Additionally, we support you throughout the entire
 process of integration and adaptation of blockchain technology into your
 already existing company network.
 
-Get in [contact with us](/contact).
-
 # 💣 Blockchain Operations
 
 Operating a blockchain system on a globale scale without losing track of your
 resources? Keep everything manageable and easy to maintain and upgrade? Let's
 talk Blockchain-DevOps.
-
-We'll get you rolling. [Contact with us](/contact).
 
 # 🎓 Training and Seminars
 
