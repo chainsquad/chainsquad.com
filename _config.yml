@@ -15,12 +15,15 @@ baseurl: ""
 url: "http://chainsquad.com"
 github: chainsquad
 markdown: kramdown
+excerpt_separator: <!--more-->
 
 collections:
  clients:
-       output: false
+   output: false
  chains:
-       output: false
+   output: false
+ presentations:
+   output: false
 
 plugins:
   - jekyll-sitemap
@@ -28,3 +31,24 @@ plugins:
 
 feed:
   posts_limit: 20
+
+nav:
+  - url: /contact
+    icon: "📯"
+    ref: "Contact"
+    lang: en
+
+  - url: /services
+    icon: "🏗"
+    ref: Services
+    lang: en
+
+  - url: /presentations
+    icon: "📊"
+    ref: Presentations
+    lang: en
+
+  - url: https://articles.chainsquad.com
+    icon: 🖇
+    ref: Articles
+    lang: en

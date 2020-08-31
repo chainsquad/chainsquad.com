@@ -15,15 +15,21 @@
      {{ site.vision[page.lang] }}
     </div>
     {% endif %}
-    
+
+    <div id="about">
+     <h5># navigation</h5>
+     {% assign pages=site.nav | where:"lang", page.lang | sort: 'priority' %}
+     {% for i in pages %}
+      {{i.icon}} / <a class="about" href="{{ i.url | prepend: site.baseurl }}">{{ i.ref }}</a><br />
+     {% endfor %}
+    </div>
+
     <div id="about">
      <h5># links</h5>
      <a href="https://github.com/{{ site.github }}">
      <img src="/img/github.svg" style="width: 12px; float:left" />
      /{{ site.github }}</a>
      <br/>
-     <a href="https://articles.chainsquad.com">
-     🖇/articles</a>
     </div>
 
    </div>
