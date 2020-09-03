@@ -1,6 +1,6 @@
 ---
 title: Hype or Hope
-date: 2020-03-03
+date: 2019-07-27
 location: Tennenlohe, Germany
 lang: en
 ---
