@@ -6,10 +6,37 @@ permalink: /clients
 priority: 20
 ---
 
-# Blockchains
+# Clients and Partners
 
-{% include list-blockchains.html %}
+Former and current projects, clients and partners in no particular order:
 
-# Clients
+<div class="row">
 
-{% include list-clients.html %}
+{% assign sorted = site.clients | sort: 'order' %}
+{% for client in sorted %}
+ <div class="col-sm-4 col-md-4">
+   <div class="thumbnail">
+    <a href="{{client.URL}}" target="_blank">
+     <img src="{{client.img}}" />
+    </a>
+    <div class="caption text-center">
+     <p>{{client.name}}</p>
+    </div>
+   </div>
+ </div>
+{% endfor %}
+
+{% for client in site.chains %}
+ <div class="col-sm-4 col-md-4">
+   <div class="thumbnail">
+    <a href="{{client.URL}}" target="_blank">
+     <img src="{{client.img}}" />
+    </a>
+    <div class="caption text-center">
+     <p>{{client.name}}</p>
+    </div>
+   </div>
+ </div>
+{% endfor %}
+
+</div>

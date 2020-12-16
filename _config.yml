@@ -34,14 +34,20 @@ feed:
   posts_limit: 20
 
 nav:
+    ###############################
   - url: /contact
     icon: "📯"
-    ref: "Contact"
+    ref: Contact
     lang: en
 
   - url: /services
     icon: "🏗"
     ref: Services
+    lang: en
+
+  - url: /clients
+    icon: "🤖"
+    ref: Clients
     lang: en
 
   - url: /presentations
@@ -54,15 +60,20 @@ nav:
     ref: Articles
     lang: en
 
-  
+    ###############################
   - url: /de/contact
     icon: "📯"
-    ref: "Kontakt"
+    ref: Kontakt
     lang: de
 
   - url: /de/leistungen
     icon: "🏗"
     ref: Leistungen 
+    lang: de
+
+  - url: /de/kunden
+    icon: "🤖"
+    ref: Kunden
     lang: de
 
   - url: /de/praesentationen
