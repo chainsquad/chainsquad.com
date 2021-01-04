@@ -1,0 +1,14 @@
+ <div class="col-sm-4 col-md-4">
+   <div class="thumbnail">
+    {% if include.item.URL %}
+    <a href="{{include.item.URL}}" target="_blank">
+     <img src="{{include.item.img}}" />
+    </a>
+    {% else %}
+     <img src="{{include.item.img}}" />
+    {% endif %}
+    <div class="caption text-center">
+     <p>{{include.item.name}}</p>
+    </div>
+   </div>
+ </div>

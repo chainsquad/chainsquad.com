@@ -1,0 +1,12 @@
+<div class="row">
+
+{% assign sorted = site.clients | sort: 'order' %}
+{% for client in sorted %}
+{% include clients-partial.html item=client %}
+{% endfor %}
+
+{% for client in site.chains %}
+{% include clients-partial.html item=client %}
+{% endfor %}
+
+</div>
