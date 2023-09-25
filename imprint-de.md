@@ -13,8 +13,8 @@ Angaben gem. § 5 TMG
 ### Betreiber und Kontakt
 
 #### {{site.name}}
-Hauptstraße 3<br/>
-90587 Veitsbronn
+Hirtenweg 14<br/>
+91054 Buckenhof
 
 #### Vertreten durch
 den Geschäftsführer: Dr.-Ing. Fabian Schuh
@@ -29,8 +29,8 @@ Umsatzsteuer-Identifikationsnummer (§27 UstG): DE308896775<br/>
 
 #### Verantwortlich für den Inhalt nach (§55 RStV)
 {{site.name}}<br/>
-Hauptstraße 3<br/>
-90587 Veitsbronn<br/>
+Hirtenweg 14<br/>
+91054 Buckenhof<br/>
 Vertreten durch den Geschäftsführer: Dr.-Ing. Fabian Schuh
 
 # Datenschutz
