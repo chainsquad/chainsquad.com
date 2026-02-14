@@ -13,3 +13,7 @@ _site/
 
 # End of https://www.toptal.com/developers/gitignore/api/jekyll
 Gemfile.lock
+node_modules
+.next
+.env
+out/
