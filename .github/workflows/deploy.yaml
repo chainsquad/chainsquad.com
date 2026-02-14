@@ -33,7 +33,7 @@ jobs:
       - name: Build App
         run: pnpm run build
         env:
-          NEXT_PUBLIC_N8N_WEBHOOK_URL: https://n8n.chainsquad.com/webhook-test/95df7a1f-3fee-4109-aed6-62d7f7a2f76b
+          NEXT_PUBLIC_N8N_WEBHOOK_URL: https://n8n.chainsquad.com/webhook/95df7a1f-3fee-4109-aed6-62d7f7a2f76b
 
       - name: Deploy to external repository
         uses: peaceiris/actions-gh-pages@v3
