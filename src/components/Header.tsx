@@ -25,6 +25,12 @@ export function Header() {
             </a>
             <a
               className="transition-colors hover:text-foreground"
+              href="#portfolio"
+            >
+              Portfolio
+            </a>
+            <a
+              className="transition-colors hover:text-foreground"
               href="/contact"
             >
               Contact

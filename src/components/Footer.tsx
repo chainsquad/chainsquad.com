@@ -11,11 +11,11 @@ export function Footer() {
           </span>
         </div>
         <div className="flex items-center gap-4 font-mono text-xs text-muted-foreground">
-          <a
-            href="mailto:info@chainsquad.com"
-            className="transition-colors hover:text-foreground"
-          >
+          <a href="mailto:info@chainsquad.com" className="transition-colors hover:text-foreground">
             info@chainsquad.com
+          </a>
+          <a href="tel:+499131691580" className="transition-colors hover:text-foreground">
+            +49 9131/691 580
           </a>
         </div>
       </div>

@@ -1,43 +1,8 @@
-"use client";
-
-import { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { addToWaitlist } from "@/lib/n8n";
-import { Mail, Phone, MapPin, Send, Check, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function ContactPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [projectType, setProjectType] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError("");
-    setLoading(true);
-
-    try {
-      await addToWaitlist({
-        name,
-        email,
-        company,
-        projectType,
-        message,
-        type: "contact",
-      });
-      setSubmitted(true);
-    } catch (err) {
-      setError("Something went wrong. Please try again.");
-      console.error(err);
-    } finally {
-      setLoading(false);
-    }
-  };
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -49,17 +14,11 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-muted-foreground">
-            Ready to build the future? Let's discuss how ChainSquad can help
-            bring your vision to reality.
+            Ready to build the future? Let's discuss how ChainSquad can help bring your vision to reality.
           </p>
         </section>
 
-        <div
-          className="font-mono text-sm text-muted-foreground/30 select-none"
-          aria-hidden="true"
-        >
-          //
-        </div>
+        <div className="font-mono text-sm text-muted-foreground/30 select-none" aria-hidden="true">//</div>
 
         {/* Contact Info */}
         <section className="py-16">
@@ -102,10 +61,8 @@ export default function ContactPage() {
               </div>
               <h3 className="font-medium">Location</h3>
               <div className="text-muted-foreground">
-                Hirtenweg 14
-                <br />
-                91054 Buckenhof
-                <br />
+                Hauptstraße 3<br />
+                90587 Veitsbronn<br />
                 Germany
               </div>
               <p className="text-sm text-muted-foreground">
@@ -115,148 +72,103 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <div
-          className="font-mono text-sm text-muted-foreground/30 select-none"
-          aria-hidden="true"
-        >
-          //
-        </div>
+        <div className="font-mono text-sm text-muted-foreground/30 select-none" aria-hidden="true">//</div>
 
         {/* Contact Form */}
         <section className="py-16">
           <div className="mb-8 max-w-2xl space-y-3">
             <h2 className="text-xl font-semibold">Send us a message</h2>
             <p className="text-muted-foreground">
-              Tell us about your project and we'll get back to you with a
-              proposal.
+              Tell us about your project and we'll get back to you with a proposal.
             </p>
           </div>
 
-          {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                    placeholder="Your name"
-                    disabled={loading}
-                    className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    placeholder="your@email.com"
-                    disabled={loading}
-                    className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                  />
-                </div>
-              </div>
-
+          <form className="space-y-6 max-w-2xl">
+            <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-2">
-                <label htmlFor="company" className="text-sm font-medium">
-                  Company
+                <label htmlFor="name" className="text-sm font-medium">
+                  Name
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                  placeholder="Your company"
-                  disabled={loading}
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your name"
                   className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                 />
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="project-type" className="text-sm font-medium">
-                  Project Type
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email
                 </label>
-                <select
-                  id="project-type"
-                  name="project-type"
-                  value={projectType}
-                  onChange={(e) => setProjectType(e.target.value)}
-                  disabled={loading}
-                  className="bg-input/30 border-input h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <option value="">Select project type</option>
-                  <option value="blockchain">Blockchain Development</option>
-                  <option value="smart-contracts">Smart Contracts</option>
-                  <option value="full-stack">Full-Stack Web Development</option>
-                  <option value="ai-llm">AI & LLM Integration</option>
-                  <option value="security">Security Audit</option>
-                  <option value="consulting">Technical Consulting</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
                   required
-                  rows={6}
-                  placeholder="Tell us about your project..."
-                  disabled={loading}
-                  className="bg-input/30 border-input placeholder:text-muted-foreground/50 w-full border px-4 py-3 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="your@email.com"
+                  className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                 />
               </div>
-
-              <button
-                type="submit"
-                disabled={loading || !name || !email || !message}
-                className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
-              >
-                {loading ? (
-                  "Sending..."
-                ) : (
-                  <>
-                    <Send className="h-4 w-4" />
-                    Send Message
-                  </>
-                )}
-              </button>
-              {error && <p className="text-sm text-destructive">{error}</p>}
-            </form>
-          ) : (
-            <div className="max-w-2xl space-y-4">
-              <div className="flex items-center gap-3 rounded-none border border-border bg-muted/20 p-6">
-                <div className="bg-primary text-primary-foreground h-16 w-16 flex items-center justify-center">
-                  <Sparkles className="h-8 w-8" />
-                </div>
-                <div>
-                  <p className="text-lg font-medium">Message sent.</p>
-                  <p className="text-muted-foreground">
-                    We'll be in touch soon.
-                  </p>
-                </div>
-              </div>
             </div>
-          )}
+
+            <div className="space-y-2">
+              <label htmlFor="company" className="text-sm font-medium">
+                Company
+              </label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Your company"
+                className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="project-type" className="text-sm font-medium">
+                Project Type
+              </label>
+              <select
+                id="project-type"
+                name="project-type"
+                className="bg-input/30 border-input h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <option value="">Select project type</option>
+                <option value="blockchain">Blockchain Development</option>
+                <option value="smart-contracts">Smart Contracts</option>
+                <option value="full-stack">Full-Stack Web Development</option>
+                <option value="ai-llm">AI & LLM Integration</option>
+                <option value="security">Security Audit</option>
+                <option value="consulting">Technical Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="message" className="text-sm font-medium">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows={6}
+                placeholder="Tell us about your project..."
+                className="bg-input/30 border-input placeholder:text-muted-foreground/50 w-full border px-4 py-3 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
+            >
+              <Send className="h-4 w-4" />
+              Send Message
+            </button>
+          </form>
 
           <div className="mt-8 rounded-none border border-border bg-muted/20 p-6">
             <h3 className="mb-2 font-medium">Alternative Contact</h3>
