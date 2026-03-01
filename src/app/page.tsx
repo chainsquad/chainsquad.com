@@ -8,6 +8,13 @@ import {
   BarChart3,
   Users,
   Lightbulb,
+  Server,
+  User,
+  Factory,
+  Workflow,
+  MessageSquare,
+  Bot,
+  Trophy,
 } from "lucide-react";
 
 export default function Home() {
@@ -47,9 +54,11 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <div className="font-mono text-sm text-muted-foreground">
-                  Founded
+                  Hackathon Wins
                 </div>
-                <div className="text-2xl font-bold">2016</div>
+                <div className="text-2xl font-bold flex items-center gap-2">
+                  <Trophy className="h-5 w-5 text-primary" />3
+                </div>
               </div>
               <div className="space-y-2">
                 <div className="font-mono text-sm text-muted-foreground">
@@ -132,6 +141,50 @@ export default function Home() {
               technologies and next-generation blockchain solutions
             </p>
           </div>
+
+          {/* AI Agents Section */}
+          <div className="mb-12">
+            <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold">
+              <Bot className="h-5 w-5 text-primary" />
+              Autonomous AI Agents
+            </h3>
+            <div className="mb-6 text-sm text-muted-foreground">
+              We build and operate production AI agents that automate workflows
+              and handle complex tasks autonomously.
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <div className="space-y-2 rounded-none border border-border bg-muted/20 p-4">
+                <MessageSquare className="h-5 w-5 text-primary" />
+                <h4 className="font-medium">Social Media Outreach</h4>
+                <p className="text-sm text-muted-foreground">
+                  Automated content creation and engagement across platforms
+                </p>
+              </div>
+              <div className="space-y-2 rounded-none border border-border bg-muted/20 p-4">
+                <Workflow className="h-5 w-5 text-primary" />
+                <h4 className="font-medium">Communications Intake</h4>
+                <p className="text-sm text-muted-foreground">
+                  Pre-processing and triaging of incoming communications
+                </p>
+              </div>
+              <div className="space-y-2 rounded-none border border-border bg-muted/20 p-4">
+                <Factory className="h-5 w-5 text-primary" />
+                <h4 className="font-medium">Coding Factory</h4>
+                <p className="text-sm text-muted-foreground">
+                  Automated code generation and development workflows
+                </p>
+              </div>
+              <div className="space-y-2 rounded-none border border-border bg-muted/20 p-4">
+                <User className="h-5 w-5 text-primary" />
+                <h4 className="font-medium">Personal Assistance</h4>
+                <p className="text-sm text-muted-foreground">
+                  Beyond coding - full personal and business support
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Core Services */}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-none border border-border bg-muted/20">
@@ -167,10 +220,9 @@ export default function Home() {
               <div className="flex h-10 w-10 items-center justify-center rounded-none border border-border bg-muted/20">
                 <Shield className="h-5 w-5" />
               </div>
-              <h3 className="font-medium">Security Solutions</h3>
+              <h3 className="font-medium">Infrastructure & Deployment</h3>
               <p className="text-sm text-muted-foreground">
-                Elliptic curve cryptography implementations and smart-contract
-                centric comprehensive security auditing
+                On-prem, dedicated, and cloud compute with HashiCorp stack
               </p>
             </div>
             <div className="space-y-3">
@@ -185,14 +237,152 @@ export default function Home() {
             </div>
             <div className="space-y-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-none border border-border bg-muted/20">
-                <Lightbulb className="h-5 w-5" />
+                <Server className="h-5 w-5" />
               </div>
-              <h3 className="font-medium">Consultancy & Bootstrapping</h3>
+              <h3 className="font-medium">DevOps & Orchestration</h3>
               <p className="text-sm text-muted-foreground">
-                Assisting businesses transform ideas into reality through
-                strategic and technical consulting their startups from concept
-                to launch
+                Ansible, Pulumi, Terraform, Consul, Vault, Nomad
               </p>
+            </div>
+          </div>
+        </section>
+
+        <div
+          className="font-mono text-sm text-muted-foreground/30 select-none"
+          aria-hidden="true"
+        >
+          //
+        </div>
+
+        {/* Tech Stack Section */}
+        <section id="stack" className="py-16">
+          <div className="mb-8 max-w-2xl space-y-3">
+            <h2 className="text-xl font-semibold">Our Technology Stack</h2>
+            <p className="text-muted-foreground">
+              Production-proven tools and frameworks we use to build reliable
+              systems
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* AI & Automation */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">AI & Automation</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  CrewAI
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  OpenClaw
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  n8n
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  LangChain
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  RAG Systems
+                </span>
+              </div>
+            </div>
+
+            {/* Development */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">Development</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  TypeScript
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  JavaScript
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Python
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  C++
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Rust
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Graphene
+                </span>
+              </div>
+            </div>
+
+            {/* Infrastructure */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">Infrastructure</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Consul
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Vault
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Nomad
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text text-sm">
+                  Ansible
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Pulumi
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Terraform
+                </span>
+              </div>
+            </div>
+
+            {/* Deployment Models */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">Deployment Models</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Cloud
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  On-Premise
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Dedicated
+                </span>
+              </div>
+            </div>
+
+            {/* Blockchain */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">Blockchain & Web3</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Solana
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Anchor
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  Graphene
+                </span>
+              </div>
+            </div>
+
+            {/* Tools */}
+            <div className="space-y-3 rounded-none border border-border p-5">
+              <h3 className="mb-2 font-semibold">Agent & Automation</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  CrewAI
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  OpenClaw
+                </span>
+                <span className="rounded-none border border-border bg-muted/10 px-3 py-1 text-sm">
+                  n8n
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -214,7 +404,7 @@ export default function Home() {
               Let's discuss how ChainSquad can help bring your vision to reality
             </p>
             <a
-              href="mailto:info@chainsquad.com"
+              href="/contact"
               className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
             >
               <Mail className="h-4 w-4" />
