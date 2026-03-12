@@ -1,11 +1,3 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Legal Notice & Terms - ChainSquad GmbH",
-  description:
-    "Legal information, imprint, and terms and conditions for ChainSquad GmbH",
-};
-
 export default function LegalPage() {
   return (
     <main className="mx-auto max-w-5xl px-4">

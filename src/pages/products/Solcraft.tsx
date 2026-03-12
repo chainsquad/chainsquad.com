@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { addToWaitlist } from "@/lib/n8n";
 import {

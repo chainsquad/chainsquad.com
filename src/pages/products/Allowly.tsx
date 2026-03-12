@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import {
   Wallet,
@@ -10,10 +8,7 @@ import {
   ChevronRight,
   X,
   ArrowRight,
-  Clock,
-  Zap,
   Shield,
-  CreditCard,
   Settings,
   TrendingUp,
 } from "lucide-react";

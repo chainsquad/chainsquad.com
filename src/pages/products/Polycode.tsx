@@ -15,8 +15,6 @@ import {
   Sparkles,
   Lock,
   Github,
-  Clock,
-  Users,
   Code2,
 } from "lucide-react";
 

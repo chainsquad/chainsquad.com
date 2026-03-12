@@ -49,16 +49,9 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: [
-          "var(--font-roboto-mono)",
-          "Roboto Mono",
-          "var(--font-inter)",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "sans-serif",
-        ],
-        mono: ["var(--font-roboto-mono)", "Roboto Mono", "monospace"],
+        // Add your custom fonts
+        sans: ["Roboto Mono", "Inter", "sans-serif"],
+        mono: ["Roboto Mono", "monospace"],
       },
     },
   },

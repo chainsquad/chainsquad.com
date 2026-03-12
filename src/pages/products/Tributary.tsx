@@ -1,13 +1,8 @@
-"use client";
-
 import { useState } from "react";
 import {
   Droplets,
-  Zap,
   Shield,
-  Clock,
   CreditCard,
-  Layers,
   CheckCircle2,
   ChevronRight,
   X,
@@ -476,7 +471,7 @@ export default function TributaryPage() {
               Stripe/PayPal
             </div>
             {comparison.map((row, idx) => (
-              <div key={row.feature} className="contents">
+              <div key={idx} className="contents">
                 <div className="p-4 text-sm border-b border-r border-border/30 bg-muted/5">
                   {row.feature}
                 </div>
