@@ -1,9 +1,9 @@
 export async function addToWaitlist(args: Record<string, string>) {
-  const n8nWebhookUrl = process.env.NEXT_PUBLIC_N8N_WEBHOOK_URL;
+  const n8nWebhookUrl = import.meta.env.VITE_N8N_WEBHOOK_URL;
 
   if (!n8nWebhookUrl) {
     throw new Error(
-      "N8N webhook URL not configured. Please set NEXT_PUBLIC_N8N_WEBHOOK_URL environment variable.",
+      "N8N webhook URL not configured. Please set VITE_N8N_WEBHOOK_URL environment variable.",
     );
   }
 

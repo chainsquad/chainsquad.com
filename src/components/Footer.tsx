@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Code2 } from "lucide-react";
 
 export function Footer() {
@@ -36,20 +37,20 @@ export function Footer() {
             <div className="font-medium text-sm mb-4">Legal</div>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a
-                  href="/privacy"
+                <Link
+                  to="/privacy"
                   className="hover:text-foreground transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/legal"
+                <Link
+                  to="/legal"
                   className="hover:text-foreground transition-colors"
                 >
                   Legal Notice & Terms
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { ChevronDown } from "lucide-react";
 
@@ -49,11 +50,11 @@ export function Header() {
   return (
     <header className="py-6">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 md:flex-row md:items-center md:justify-between">
-        <a className="inline-flex text-primary" href="/">
+        <Link className="inline-flex text-primary" to="/">
           <span className="font-semibold text-xs uppercase tracking-[0.3em]">
             CHAINSQUAD
           </span>
-        </a>
+        </Link>
         <div className="flex w-full flex-col gap-4 md:w-auto md:flex-row md:items-center md:justify-end md:gap-6">
           <nav className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs uppercase tracking-[0.12em]">
             {navItems.map((item) => (
@@ -73,9 +74,9 @@ export function Header() {
               <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                 <div className="bg-background border border-border shadow-lg min-w-48 py-2">
                   {products.map((product) => (
-                    <a
+                    <Link
                       key={product.href}
-                      href={product.href}
+                      to={product.href}
                       className="block px-4 py-2 hover:bg-muted/50 transition-colors"
                     >
                       <div className="text-xs uppercase tracking-[0.12em] text-foreground">
@@ -84,7 +85,7 @@ export function Header() {
                       <div className="text-[10px] text-muted-foreground mt-0.5 normal-case tracking-normal">
                         {product.description}
                       </div>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

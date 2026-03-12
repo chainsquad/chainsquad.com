@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Mail,
   Code,
@@ -16,7 +17,6 @@ import {
   CreditCard,
   Sparkles,
   Heart,
-  Link,
 } from "lucide-react";
 
 const products = [
@@ -73,7 +73,6 @@ const products = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-5xl px-4">
-      {/* Hero Section */}
       <section className="py-20">
         <div className="grid gap-8 lg:grid-cols-[2fr_1fr] lg:gap-16">
           <div className="flex flex-col items-start gap-4 text-left">
@@ -86,13 +85,13 @@ export default function Home() {
               since 2016
             </p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
               >
                 <Mail className="h-4 w-4" />
                 Get in Touch
-              </a>
+              </Link>
               <a
                 href="#services"
                 className="border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
@@ -139,7 +138,6 @@ export default function Home() {
         //
       </div>
 
-      {/* Products Section */}
       <section id="products" className="py-16">
         <div className="mb-8 max-w-2xl space-y-3">
           <h2 className="text-xl font-semibold">Our Products</h2>
@@ -149,9 +147,9 @@ export default function Home() {
         </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => (
-            <a
+            <Link
               key={product.name}
-              href={product.href}
+              to={product.href}
               className="border border-border/50 hover:border-primary/30 transition-all group"
             >
               <div className="p-5 space-y-3">
@@ -161,7 +159,7 @@ export default function Home() {
                   {product.description}
                 </p>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </section>
@@ -173,7 +171,6 @@ export default function Home() {
         //
       </div>
 
-      {/* About Section */}
       <section id="about" className="py-16">
         <div className="mb-8 max-w-2xl space-y-3">
           <h2 className="text-xl font-semibold">About ChainSquad</h2>
@@ -215,7 +212,6 @@ export default function Home() {
         //
       </div>
 
-      {/* Services Section */}
       <section id="services" className="py-16">
         <div className="mb-8 max-w-2xl space-y-3">
           <h2 className="text-xl font-semibold">What We Do</h2>
@@ -225,7 +221,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* AI Agents Section */}
         <div className="mb-12">
           <h3 className="mb-4 flex items-center gap-2 text-lg font-semibold">
             <Bot className="h-5 w-5 text-primary" />
@@ -267,7 +262,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Core Services */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-none border border-border bg-muted/20">
@@ -275,7 +269,7 @@ export default function Home() {
             </div>
             <h3 className="font-medium">Full-Stack Development</h3>
             <p className="text-sm text-muted-foreground">
-              End-to-end application development using TypeScript,{" "}
+              End-to-end application development using TypeScript,
             </p>
           </div>
           <div className="space-y-3">
@@ -336,7 +330,6 @@ export default function Home() {
         //
       </div>
 
-      {/* CTA Section */}
       <section className="py-16">
         <div className="rounded-none border border-border bg-muted/20 p-12 text-center">
           <h2 className="mb-4 text-2xl font-bold">
@@ -346,13 +339,13 @@ export default function Home() {
             Let&apos;s discuss how ChainSquad can help bring your vision to
             reality
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
           >
             <Mail className="h-4 w-4" />
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
     </main>

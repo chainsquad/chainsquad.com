@@ -1,12 +1,6 @@
 import { Shield, Eye, Database, CheckCircle } from "lucide-react";
 
-export const metadata = {
-  title: "Privacy Policy - ChainSquad GmbH",
-  description:
-    "Our commitment to privacy and data protection under GDPR and European privacy laws.",
-};
-
-export default function PrivacyPage() {
+export default function Privacy() {
   return (
     <main className="mx-auto max-w-5xl px-4">
       <section className="py-20">
