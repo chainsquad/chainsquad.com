@@ -4,7 +4,6 @@ import {
   Heart,
   Zap,
   Shield,
-  Clock,
   DollarSign,
   Link2,
   CheckCircle2,
@@ -422,7 +421,7 @@ export default function ContributePage() {
               GitHub Sponsors
             </div>
             {comparison.map((row, idx) => (
-              <div key={row.feature} className="contents">
+              <div key={idx} className="contents">
                 <div className="p-4 text-sm border-b border-r border-border/30 bg-muted/5">
                   {row.feature}
                 </div>

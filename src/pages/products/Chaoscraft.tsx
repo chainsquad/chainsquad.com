@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   Sparkles,
   Zap,
-  Clock,
   Users,
   Star,
   Play,

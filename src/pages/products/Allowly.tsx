@@ -8,10 +8,7 @@ import {
   ChevronRight,
   X,
   ArrowRight,
-  Clock,
-  Zap,
   Shield,
-  CreditCard,
   Settings,
   TrendingUp,
 } from "lucide-react";
