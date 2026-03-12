@@ -330,7 +330,7 @@ export default function Home() {
         //
       </div>
 
-      <section className="py-16">
+      <section id="contact" className="py-16">
         <div className="rounded-none border border-border bg-muted/20 p-12 text-center">
           <h2 className="mb-4 text-2xl font-bold">
             Ready to Build the Future?

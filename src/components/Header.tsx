@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
 import { ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const navItems = [
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "about" },
+  { label: "Services", href: "services" },
+  { label: "Contact", href: "contact" },
 ];
 
 const products = [
@@ -47,6 +49,26 @@ const products = [
 ];
 
 export function Header() {
+  const navigate = useNavigate();
+  const scrollToSection = (id: string) => {
+    navigate("/");
+
+    // Store where to scroll in sessionStorage
+    sessionStorage.setItem("scrollTo", id);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+  useEffect(() => {
+    const section = sessionStorage.getItem("scrollTo");
+    if (section) {
+      sessionStorage.removeItem("scrollTo");
+      // Small timeout to ensure the page has rendered
+      setTimeout(() => {
+        document
+          .getElementById(section)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, []);
   return (
     <header className="py-6">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 md:flex-row md:items-center md:justify-between">
@@ -60,8 +82,8 @@ export function Header() {
             {navItems.map((item) => (
               <a
                 key={item.href}
-                className="transition-colors hover:text-foreground"
-                href={item.href}
+                className="transition-colors hover:text-foreground hover:cursor-pointer"
+                onClick={() => scrollToSection(item.href)}
               >
                 {item.label}
               </a>

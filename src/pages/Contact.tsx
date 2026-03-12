@@ -1,8 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { addToWaitlist } from "@/lib/n8n";
 import { Mail, Phone, MapPin, Send, Sparkles } from "lucide-react";
 
-export default function Contact() {
+export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
@@ -36,6 +38,7 @@ export default function Contact() {
   };
   return (
     <main className="mx-auto max-w-5xl px-4">
+      {/* Hero */}
       <section className="py-20">
         <h1 className="mb-4 text-3xl font-bold leading-snug tracking-tighter md:text-4xl">
           Get in Touch
@@ -53,6 +56,7 @@ export default function Contact() {
         //
       </div>
 
+      {/* Contact Info */}
       <section className="py-16">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4 rounded-none border border-border p-6">
@@ -111,6 +115,7 @@ export default function Contact() {
         //
       </div>
 
+      {/* Contact Form */}
       <section className="py-16">
         <div className="mb-8 max-w-2xl space-y-3">
           <h2 className="text-xl font-semibold">Send us a message</h2>
