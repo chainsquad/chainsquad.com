@@ -231,14 +231,18 @@ export default function AllowlyPage() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#models"
+                href="https://allowly.app"
                 className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all h-11 px-6"
               >
-                Choose Your Model
+                Visit allowly.app
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#how-it-works"
+                onClick={() => {
+                  document
+                    .getElementById("how-it-works")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
               >
                 See How It Works
@@ -581,7 +585,7 @@ export default function AllowlyPage() {
             </a>
             <span className="text-muted-foreground/30">•</span>
             <a
-              href="https://github.com/yourorg/allowly"
+              href="https://github.com/xeroc/allowly"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"

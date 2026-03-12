@@ -246,7 +246,11 @@ export default function ContributePage() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#how-it-works"
+                onClick={() => {
+                  document
+                    .getElementById("how-it-works")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
               >
                 See How It Works

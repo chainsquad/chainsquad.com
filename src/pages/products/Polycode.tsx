@@ -221,14 +221,18 @@ export default function PolycodePage() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#workflows"
                 className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all h-11 px-6"
+                onClick={() => {
+                  document
+                    .getElementById("workflows")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Explore Workflows
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="https://github.com/yourorg/polycode"
+                href="https://github.com/apps/polycode-agent"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
@@ -507,7 +511,7 @@ export default function PolycodePage() {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
-              href="https://github.com/apps/polycode"
+              href="https://github.com/apps/polycode-agent"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
@@ -517,7 +521,7 @@ export default function PolycodePage() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="https://github.com/yourorg/polycode"
+              href="https://github.com/apps/polycode-agent"
               target="_blank"
               rel="noopener noreferrer"
               className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center rounded-none font-medium text-sm h-11 px-6"
@@ -527,21 +531,29 @@ export default function PolycodePage() {
           </div>
           <div className="flex justify-center gap-6 mt-8">
             <a
-              href="#workflows"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => {
+                document
+                  .getElementById("workflows")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Workflows
             </a>
             <span className="text-muted-foreground/30">•</span>
             <a
-              href="#agents"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => {
+                document
+                  .getElementById("agents")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Agents
             </a>
             <span className="text-muted-foreground/30">•</span>
             <a
-              href="https://github.com/yourorg/polycode"
+              href="https://github.com/chainqsuad"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"

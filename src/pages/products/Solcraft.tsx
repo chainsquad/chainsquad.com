@@ -282,15 +282,23 @@ export default function Home() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#agents"
                 className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
+                onClick={() => {
+                  document
+                    .getElementById("agents")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Explore the Pipeline
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#waitlist"
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none h-11 px-6"
+                onClick={() => {
+                  document
+                    .getElementById("waitlist")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Join Waitlist
                 <ChevronRight className="h-4 w-4" />

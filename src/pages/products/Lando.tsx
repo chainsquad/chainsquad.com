@@ -153,7 +153,11 @@ export default function LandoPage() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#services"
+                onClick={() => {
+                  document
+                    .getElementById("services")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center rounded-none font-medium text-sm h-11 px-6"
               >
                 Agent Services

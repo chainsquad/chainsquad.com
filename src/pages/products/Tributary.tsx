@@ -108,7 +108,7 @@ const products = [
       "Stripe-compatible API",
       "Real-time status",
     ],
-    link: "/products/payments",
+    link: "/#/products/payments",
     linkText: "Learn More",
   },
   {
@@ -140,7 +140,7 @@ const products = [
       "Tributary-powered",
       "Zero infrastructure",
     ],
-    link: "/products/lando",
+    link: "/#/products/lando",
     linkText: "Learn More",
   },
 ];
@@ -245,8 +245,12 @@ export default function TributaryPage() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                href="#products"
                 className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
+                onClick={() => {
+                  document
+                    .getElementById("products")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Explore Products
               </a>
@@ -601,7 +605,7 @@ export default function TributaryPage() {
           </div>
           <div className="flex justify-center gap-6 mt-8">
             <a
-              href="/products/payments"
+              href="https://sdk.tributary.so"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Payments SDK
