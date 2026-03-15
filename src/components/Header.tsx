@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Code2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -72,7 +72,8 @@ export function Header() {
   return (
     <header className="py-6">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 md:flex-row md:items-center md:justify-between">
-        <Link className="inline-flex text-primary" to="/">
+        <Link className="inline-flex items-center gap-2 text-primary" to="/">
+          <Code2 className="h-5 w-5 text-primary" />
           <span className="font-semibold text-xs uppercase tracking-[0.3em]">
             CHAINSQUAD
           </span>
