@@ -56,7 +56,7 @@ export function Footer() {
           </div>
         </div>
         <div className="text-center text-sm text-muted-foreground/60 mt-8">
-          &copy; 2026 Solana AI Developer. Built with ❤️ for Solana ecosystem.
+          &copy; 2026 ChainSquad GmbH. Built with ❤️ using neovim.
         </div>
       </div>
     </footer>
