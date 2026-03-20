@@ -211,7 +211,7 @@ export default function PolycodePage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tighter">
               Software workflows,{" "}
-              <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
                 fully automated
               </span>
             </h1>
@@ -221,7 +221,7 @@ export default function PolycodePage() {
             </p>
             <div className="flex gap-3">
               <a
-                className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all h-11 px-6"
+                className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden transition-all h-11 px-6"
                 onClick={() => {
                   document
                     .getElementById("workflows")
@@ -514,7 +514,7 @@ export default function PolycodePage() {
               href="https://github.com/apps/polycode-agent"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
+              className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
             >
               <Github className="h-4 w-4" />
               Install GitHub App

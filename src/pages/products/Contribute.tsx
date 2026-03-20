@@ -226,7 +226,7 @@ export default function ContributePage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tighter">
               Recurring donations,{" "}
-              <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
                 finally automated
               </span>
             </h1>
@@ -240,7 +240,7 @@ export default function ContributePage() {
                 href="https://contribute.so"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all h-11 px-6"
+                className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden transition-all h-11 px-6"
               >
                 Start Receiving
                 <ArrowRight className="h-4 w-4" />
@@ -543,7 +543,7 @@ export default function ContributePage() {
               href="https://contribute.so"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
+              className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
             >
               Start Receiving
               <ArrowRight className="h-4 w-4" />

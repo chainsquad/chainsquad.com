@@ -271,7 +271,7 @@ export default function Home() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tighter">
               Solana App Development,{" "}
-              <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
                 Automated
               </span>
             </h1>
@@ -282,7 +282,7 @@ export default function Home() {
             </p>
             <div className="flex gap-3">
               <a
-                className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
+                className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
                 onClick={() => {
                   document
                     .getElementById("agents")
@@ -293,7 +293,7 @@ export default function Home() {
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
-                className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none h-11 px-6"
+                className="border bg-background hover:bg-muted/80 text-foreground inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden h-11 px-6"
                 onClick={() => {
                   document
                     .getElementById("waitlist")
@@ -417,7 +417,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mt-8">
             <div className="space-y-4">
               <div className="flex gap-3 mb-2">
-                <Zap className="h-5 w-5 text-primary flex-shrink-0" />
+                <Zap className="h-5 w-5 text-primary shrink-0" />
                 <div>
                   <h3 className="font-medium">Zero to Hero</h3>
                   <p className="text-sm text-muted-foreground">
@@ -426,7 +426,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex gap-3 mb-2">
-                <Workflow className="h-5 w-5 text-primary flex-shrink-0" />
+                <Workflow className="h-5 w-5 text-primary shrink-0" />
                 <div>
                   <h3 className="font-medium">Hours, Not Weeks</h3>
                   <p className="text-sm text-muted-foreground">
@@ -436,7 +436,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex gap-3">
-                <Layers className="h-5 w-5 text-primary flex-shrink-0" />
+                <Layers className="h-5 w-5 text-primary shrink-0" />
                 <div>
                   <h3 className="font-medium">Best Practices, Every Time</h3>
                   <p className="text-sm text-muted-foreground">
@@ -448,7 +448,7 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <div className="flex gap-3 mb-2">
-                <FileCode className="h-5 w-5 text-primary flex-shrink-0" />
+                <FileCode className="h-5 w-5 text-primary shrink-0" />
                 <div>
                   <h3 className="font-medium">Type-Safe & Tested</h3>
                   <p className="text-sm text-muted-foreground">
@@ -478,11 +478,11 @@ export default function Home() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="bg-input/30 border-input placeholder:text-muted-foreground/50 h-11 w-full border px-4 text-sm transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50"
                 />
                 <button
                   type="submit"
-                  className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
+                  className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 h-11 px-6"
                   disabled={loading || !email}
                 >
                   Join Waitlist

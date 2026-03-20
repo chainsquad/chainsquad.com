@@ -221,7 +221,7 @@ export default function AllowlyPage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-snug tracking-tighter">
               Pocket money,{" "}
-              <span className="bg-gradient-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#9945FF] to-[#14F195] bg-clip-text text-transparent">
                 the web3 way
               </span>
             </h1>
@@ -232,7 +232,7 @@ export default function AllowlyPage() {
             <div className="flex gap-3">
               <a
                 href="https://allowly.app"
-                className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-none transition-all h-11 px-6"
+                className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm outline-hidden transition-all h-11 px-6"
               >
                 Visit allowly.app
                 <ArrowRight className="h-4 w-4" />
@@ -560,7 +560,7 @@ export default function AllowlyPage() {
           <div className="flex justify-center gap-4 flex-wrap">
             <a
               href="/human"
-              className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
+              className="bg-primary text-primary-foreground shadow-2xs hover:bg-primary/90 inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-none font-medium text-sm h-11 px-6"
             >
               <UserCircle className="h-4 w-4" />
               Subscriptions (Kids)
