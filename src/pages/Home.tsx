@@ -262,6 +262,13 @@ export default function Home() {
           </div>
         </div>
 
+        <div
+          className="font-mono text-sm text-muted-foreground/30 select-none"
+          aria-hidden="true"
+        >
+          //
+        </div>
+
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-none border border-border bg-muted/20">
