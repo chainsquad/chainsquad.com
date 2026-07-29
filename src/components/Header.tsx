@@ -46,6 +46,11 @@ const products = [
     href: "/products/polycode",
     description: "Agentic PM lead development factory",
   },
+  {
+    label: "Hordr",
+    href: "/products/hordr",
+    description: "Coding agent fleet orchestration",
+  },
 ];
 
 export function Header() {

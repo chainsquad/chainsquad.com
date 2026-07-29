@@ -12,6 +12,7 @@ import Solcraft from "./pages/products/Solcraft";
 import Chaoscraft from "./pages/products/Chaoscraft";
 import Contribute from "./pages/products/Contribute";
 import Polycode from "./pages/products/Polycode";
+import Hordr from "./pages/products/Hordr";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/products/chaoscraft" element={<Chaoscraft />} />
         <Route path="/products/contribute" element={<Contribute />} />
         <Route path="/products/polycode" element={<Polycode />} />
+        <Route path="/products/hordr" element={<Hordr />} />
       </Routes>
       <Footer />
     </div>

@@ -17,6 +17,7 @@ import {
   CreditCard,
   Sparkles,
   Heart,
+  Boxes,
 } from "lucide-react";
 
 const products = [
@@ -67,6 +68,12 @@ const products = [
     href: "/products/contribute",
     icon: Heart,
     description: "Contribute to Tributary",
+  },
+  {
+    name: "Hordr",
+    href: "/products/hordr",
+    icon: Boxes,
+    description: "Coding agent fleet orchestration",
   },
 ];
 
