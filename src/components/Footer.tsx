@@ -1,62 +1,28 @@
 import { Link } from "react-router-dom";
-import { Code2 } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="border-t border-border/50">
-      <div className="container mx-auto max-w-6xl px-6 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Code2 className="h-5 w-5 text-primary" />
-              <span className="font-semibold uppercase tracking-[0.3em]">
-                CHAINSQUAD
-              </span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Solana Development, Crafted with AI. Specialized, Simple, Fast.
-            </p>
-          </div>
-          <div></div>
-          <div>
-            <div className="font-medium text-sm mb-4">Resources</div>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>
-                <a
-                  href="https://github.com/chainsquad"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-foreground transition-colors"
-                >
-                  GitHub Repository
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-medium text-sm mb-4">Legal</div>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>
-                <Link
-                  to="/privacy"
-                  className="hover:text-foreground transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/legal"
-                  className="hover:text-foreground transition-colors"
-                >
-                  Legal Notice & Terms
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
+        <div>&copy; 2026 ChainSquad GmbH</div>
+        <div className="flex items-center gap-6">
+          <a
+            href="https://github.com/chainsquad"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            GitHub
+          </a>
+          <Link to="/privacy" className="transition-colors hover:text-foreground">
+            Privacy
+          </Link>
+          <Link to="/legal" className="transition-colors hover:text-foreground">
+            Legal
+          </Link>
         </div>
-        <div className="text-center text-sm text-muted-foreground/60 mt-8">
-          &copy; 2026 ChainSquad GmbH. Built with ❤️ using neovim.
+        <div className="text-muted-foreground/60">
+          Built with ❤️ using neovim.
         </div>
       </div>
     </footer>
